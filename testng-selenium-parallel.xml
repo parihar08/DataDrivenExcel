@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel TestSuite" preserve-order="true" parallel="tests" thread-count="2">
+	<test name="Firefox Test">
+	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="baseUrl" value="https://letskodeit.teachable.com"></parameter>
+	<parameter name="emailId" value="pari_indiana88@yahoo.com"></parameter>
+	<parameter name="psswd" value="parihar_08"></parameter>
+		<classes>
+			<class name= "parameters.TestNG_SeleniumParametersParallel"></class>
+		</classes>
+	</test>
+	<test name="Chrome Test">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="baseUrl" value="https://letskodeit.teachable.com"></parameter>
+	<parameter name="emailId" value="pari_indiana88@yahoo.com"></parameter>
+	<parameter name="psswd" value="parihar_08"></parameter>
+		<classes>
+			<class name= "parameters.TestNG_SeleniumParametersParallel"></class>
+		</classes>
+	</test>
+</suite>

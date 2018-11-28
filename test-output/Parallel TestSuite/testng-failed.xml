@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel TestSuite]" parallel="tests">
+  <test thread-count="2" name="Chrome Test(failed)" parallel="tests">
+    <parameter name="baseUrl" value="https://letskodeit.teachable.com"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="emailId" value="pari_indiana88@yahoo.com"/>
+    <parameter name="psswd" value="parihar_08"/>
+    <classes>
+      <class name="parameters.TestNG_SeleniumParametersParallel">
+        <methods>
+          <include name="cleanUp"/>
+          <include name="setUp"/>
+          <include name="testLogin"/>
+        </methods>
+      </class> <!-- parameters.TestNG_SeleniumParametersParallel -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Parallel TestSuite] -->
